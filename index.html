@@ -3,32 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sandeep kumar | Portfolio</title>
+  <title>Sandeep | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
-  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
-    <h1 class="animate-title">Hi, sandy</h1>
-    <p class="animate-subtitle">Web Developer | Designer | Student</p>
+    <h1>Sandeep</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>Hello! I'm passionate about web development. I love creating beautiful, responsive websites.</p>
+    <p>I'm a passionate web developer skilled in HTML, CSS, and JavaScript. I enjoy building clean and responsive websites.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div>💻 HTML</div>
+      <div>🎨 CSS</div>
+      <div>⚙️ JavaScript</div>
+    </div>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
-    <div class="project-card">Portfolio Website (this site!)</div>
-    <div class="project-card">Learning Platform (WIP)</div>
+    <div class="project">
+      <h3>My Portfolio</h3>
+      <p>A personal website to showcase my work and skills.</p>
+      <a href="https://sandeepK024.github.io/portfolio" target="_blank">View Live</a>
+    </div>
   </section>
 
   <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: sandyacchup143@gmail.com</p>
-    <p>GitHub: github.com/sandeepK024</p>
+    <h2>Contact Me</h2>
+    <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="_replyto" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
   </section>
+
+  <footer>
+    <p>&copy; 2025 Sandeep. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
